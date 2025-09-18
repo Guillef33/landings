@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebMaster Pro - Domina el Desarrollo Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'spartan': ['League Spartan', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'neon-cyan': '#00ffff',
+                        'neon-pink': '#ff0080',
+                        'dark-purple': '#1a0b2e',
+                        'electric-blue': '#0066ff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white font-inter overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-dark-purple via-purple-900 to-indigo-900">
+        <div class="absolute inset-0 bg-black/40"></div>
+        
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-neon-cyan/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-32 right-20 w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-electric-blue/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+            <h1 class="font-spartan font-bold text-5xl md:text-7xl lg:text-8xl mb-6 bg-gradient-to-r from-neon-cyan via-white to-neon-pink bg-clip-text text-transparent animate-pulse">
+                WebMaster Pro
+            </h1>
+            <p class="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-300 max-w-4xl mx-auto font-light">
+                Conviértete en un desarrollador web profesional en 12 semanas. Domina React, Node.js y las tecnologías más demandadas del mercado.
+            </p>
+            <div class="space-y-6 md:space-y-0 md:space-x-6 md:flex md:justify-center md:items-center">
+                <a href="#formulario" class="inline-block bg-gradient-to-r from-neon-pink to-electric-blue px-12 py-4 rounded-full text-xl font-semibold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-neon-pink/50">
+                    ¡Inscríbete Ahora!
+                </a>
+                <div class="text-center md:text-left">
+                    <div class="text-3xl md:text-4xl font-bold text-neon-cyan">$497</div>
+                    <div class="text-sm text-gray-400 line-through">Precio regular: $997</div>
+                    <div class="text-sm text-neon-pink font-semibold">50% de descuento por tiempo limitado</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Section -->
+    <section id="caracteristicas" class="py-20 bg-gray-900 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="font-spartan font-bold text-4xl md:text-6xl text-center mb-16 bg-gradient-to-r from-neon-cyan to-white bg-clip-text text-transparent">
+                Lo Que Aprenderás
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-neon-cyan/50 transition-all duration-300 hover:scale-105 group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-neon-cyan to-electric-blue rounded-lg mb-6 flex items-center justify-center text-2xl">⚛️</div>
+                    <h3 class="font-spartan font-bold text-2xl mb-4 group-hover:text-neon-cyan transition-colors">React & Next.js</h3>
+                    <p class="text-gray-300">Construye aplicaciones web modernas y escalables con los frameworks más populares del mercado.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-neon-pink/50 transition-all duration-300 hover:scale-105 group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-neon-pink to-purple-500 rounded-lg mb-6 flex items-center justify-center text-2xl">🚀</div>
+                    <h3 class="font-spartan font-bold text-2xl mb-4 group-hover:text-neon-pink transition-colors">Node.js & APIs</h3>
+                    <p class="text-gray-300">Desarrolla backends robustos y APIs RESTful para tus aplicaciones web profesionales.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-electric-blue/50 transition-all duration-300 hover:scale-105 group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-electric-blue to-indigo-500 rounded-lg mb-6 flex items-center justify-center text-2xl">🛢️</div>
+                    <h3 class="font-spartan font-bold text-2xl mb-4 group-hover:text-electric-blue transition-colors">Bases de Datos</h3>
+                    <p class="text-gray-300">Domina MongoDB, PostgreSQL y aprende a diseñar esquemas de datos eficientes.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-yellow-400/50 transition-all duration-300 hover:scale-105 group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg mb-6 flex items-center justify-center text-2xl">☁️</div>
+                    <h3 class="font-spartan font-bold text-2xl mb-4 group-hover:text-yellow-400 transition-colors">Cloud & DevOps</h3>
+                    <p class="text-gray-300">Despliega tus aplicaciones en AWS, Docker y configura pipelines de CI/CD profesionales.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-green-400/50 transition-all duration-300 hover:scale-105 group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg mb-6 flex items-center justify-center text-2xl">💼</div>
+                    <h3 class="font-spartan font-bold text-2xl mb-4 group-hover:text-green-400 transition-colors">Proyectos Reales</h3>
+                    <p class="text-gray-300">Construye un portfolio con 5 proyectos profesionales que impresionarán a los reclutadores.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-red-400/50 transition-all duration-300 hover:scale-105 group">
+                    <div class="w-16 h-16 bg-gradient-to-r from-red-400 to-pink-500 rounded-lg mb-6 flex items-center justify-center text-2xl">🎯</div>
+                    <h3 class="font-spartan font-bold text-2xl mb-4 group-hover:text-red-400 transition-colors">Empleabilidad</h3>
+                    <p class="text-gray-300">Preparación para entrevistas técnicas y estrategias para conseguir tu primer trabajo tech.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-20 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 relative">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="font-spartan font-bold text-4xl md:text-6xl text-center mb-16 bg-gradient-to-r from-white to-neon-cyan bg-clip-text text-transparent">
+                Historias de Éxito
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:border-neon-cyan/30 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-neon-cyan to-blue-500 rounded-full flex items-center justify-center text-2xl font-bold">MG</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">María González</h4>
+                            <p class="text-neon-cyan text-sm">Frontend Developer @ Google</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"En solo 3 meses después del curso, conseguí mi trabajo soñado en Google. El contenido es increíblemente práctico y actualizado."</p>
+                    <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:border-neon-pink/30 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-neon-pink to-purple-500 rounded-full flex items-center justify-center text-2xl font-bold">JR</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Juan Rodríguez</h4>
+                            <p class="text-neon-pink text-sm">Fullstack Developer @ Spotify</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Pasé de no saber programar a ganar $80,000 anuales. Este curso cambió mi vida completamente. ¡Totalmente recomendado!"</p>
+                    <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:border-electric-blue/30 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-electric-blue to-indigo-500 rounded-full flex items-center justify-center text-2xl font-bold">AS</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Ana Silva</h4>
+                            <p class="text-electric-blue text-sm">CTO @ Startup Unicornio</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"No solo aprendí a programar, sino que desarrollé las habilidades de liderazgo técnico que me llevaron a ser CTO."</p>
+                    <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario Section -->
+    <section id="formulario" class="py-20 bg-gray-900 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-spartan font-bold text-4xl md:text-6xl text-center mb-8 bg-gradient-to-r from-neon-pink via-neon-cyan to-electric-blue bg-clip-text text-transparent">
+                    ¡Comienza Tu Transformación Hoy!
+                </h2>
+                <p class="text-xl text-center text-gray-300 mb-12">Únete a más de 10,000 estudiantes que ya transformaron sus carreras</p>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-neon-cyan/10 to-electric-blue/10 p-6 rounded-2xl border border-neon-cyan/20">
+                            <h3 class="font-spartan font-bold text-2xl mb-4 text-neon-cyan">🎯 Lo que obtienes:</h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center"><span class="text-neon-cyan mr-3">✓</span>12 semanas de contenido premium</li>
+                                <li class="flex items-center"><span class="text-neon-cyan mr-3">✓</span>Proyectos del mundo real</li>
+                                <li class="flex items-center"><span class="text-neon-cyan mr-3">✓</span>Mentorías personalizadas</li>
+                                <li class="flex items-center"><span class="text-neon-cyan mr-3">✓</span>Comunidad privada</li>
+                                <li class="flex items-center"><span class="text-neon-cyan mr-3">✓</span>Certificado profesional</li>
+                                <li class="flex items-center"><span class="text-neon-cyan mr-3">✓</span>Garantía 30 días</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-neon-pink mb-2">$497</div>
+                            <div class="text-gray-400 line-through text-xl mb-2">Valor regular: $997</div>
+                            <div class="bg-gradient-to-r from-neon-pink to-red-500 text-white px-4 py-2 rounded-full inline-block text-sm font-bold animate-pulse">⏰ Oferta termina en 48 horas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50">
+                        <form class="space-y-6" onsubmit="handleSubmit(event)">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">Nombre Completo</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none focus:ring-2 focus:ring-neon-cyan/20 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">Email</label>
+                                <input type="email" required class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none focus:ring-2 focus:ring-neon-cyan/20 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">Teléfono</label>
+                                <input type="tel" required class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none focus:ring-2 focus:ring-neon-cyan/20 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">Nivel de Experiencia</label>
+                                <select required class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none focus:ring-2 focus:ring-neon-cyan/20 transition-all">
+                                    <option value="">Selecciona tu nivel</option>
+                                    <option value="principiante">Principiante total</option>
+                                    <option value="basico">Conocimientos básicos</option>
+                                    <option value="intermedio">Nivel intermedio</option>
+                                    <option value="avanzado">Quiero especializarme</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">¿Por qué quieres ser desarrollador?</label>
+                                <textarea rows="3" class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-neon-cyan focus:outline-none focus:ring-2 focus:ring-neon-cyan/20 transition-all" placeholder="Cuéntanos tu motivación..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-neon-pink via-neon-cyan to-electric-blue px-8 py-4 rounded-lg text-xl font-bold hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-neon-pink/50">
+                                🚀 ¡Inscribirme Ahora - $497!
+                            </button>
+                            <p class="text-xs text-gray-400 text-center">
+                                Al inscribirte aceptas nuestros términos y condiciones. Garantía de devolución 100% en 30 días.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <h3 class="font-spartan font-bold text-3xl mb-4 bg-gradient-to-r from-neon-cyan to-neon-pink bg-clip-text text-transparent">WebMaster Pro</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Transformamos vidas a través de la educación en tecnología. Únete a la revolución digital y construye el futuro que mereces.</p>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500">&copy; 2024 WebMaster Pro. Todos los derechos reservados. | Términos y Condiciones | Política de Privacidad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const button = event.target.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '⏳ Procesando...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                button.innerHTML = '✅ ¡Inscripción Exitosa!';
+                button.classList.remove('from-neon-pink', 'via-neon-cyan', 'to-electric-blue');
+                button.classList.add('from-green-500', 'to-green-600');
+                
+                setTimeout(() => {
+                    alert('¡Felicitaciones! Te has inscrito exitosamente en WebMaster Pro. Recibirás un email con todos los detalles en los próximos minutos.');
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                    button.classList.remove('from-green-500', 'to-green-600');
+                    button.classList.add('from-neon-pink', 'via-neon-cyan', 'to-electric-blue');
+                    event.target.reset();
+                }, 2000);
+            }, 2000);
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.absolute');
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
